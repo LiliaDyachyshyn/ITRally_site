@@ -1,4 +1,4 @@
-Published on Tilda.cc
+Published on Github.com
 - - -
 Upload the project to your website:
 1. Copy the contents of this folder to your server by FTP
