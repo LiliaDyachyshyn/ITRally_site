@@ -1,0 +1,45 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page18340844.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^main$ page18340844.html [NC]
+RewriteRule ^main/$ page18340844.html [NC]
+
+RewriteRule ^starters$ page18968501.html [NC]
+RewriteRule ^starters/$ page18968501.html [NC]
+
+RewriteRule ^itrally$ page19096191.html [NC]
+RewriteRule ^itrally/$ page19096191.html [NC]
+
+RewriteRule ^ba$ page19076168.html [NC]
+RewriteRule ^ba/$ page19076168.html [NC]
+
+RewriteRule ^manageitrally/old$ page18099876.html [NC]
+RewriteRule ^manageitrally/old/$ page18099876.html [NC]
+
+RewriteRule ^manageitrally$ page20454428.html [NC]
+RewriteRule ^manageitrally/$ page20454428.html [NC]
+
+RewriteRule ^manageitrally1$ page20454418.html [NC]
+RewriteRule ^manageitrally1/$ page20454418.html [NC]
+
+RewriteRule ^manageitrally2$ page20494254.html [NC]
+RewriteRule ^manageitrally2/$ page20494254.html [NC]
+
+RewriteRule ^manageitrally3$ page20494646.html [NC]
+RewriteRule ^manageitrally3/$ page20494646.html [NC]
+
+RewriteRule ^manageitrally4$ page21339957.html [NC]
+RewriteRule ^manageitrally4/$ page21339957.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3930-3861-4064-a361-653237316537/IT-Rally-.ico [R=302,L]
+
